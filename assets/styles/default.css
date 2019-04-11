@@ -1,0 +1,131 @@
+
+.fa-users,.fa-address-card{
+    font-size: 6rem;
+}
+
+.general-col .col-6{
+    text-align: center;
+}
+
+.general-col {
+    color: #117a8b;
+    
+}
+
+#chart-table-card tbody th,td{
+    color:#495057;
+}
+
+#chart-table-card {
+    height: 100%;
+}
+
+#chart-table-card tr{
+    cursor: pointer;
+}
+
+.btn-primary{
+    background:#47bac1;
+    border-color: #47bac1;
+}
+
+.btn-primary:hover{
+    background:#117a8b;
+}
+
+.input-error{
+    background:#ed969e;
+}
+
+.ajs-message{
+    min-width: 380px;
+}
+
+#map {
+    min-height: 70vh;
+}
+
+.modal-xl{
+    max-width: 1200px;;
+}
+
+.modal-title{
+    font-size: 1rem;
+}
+
+.gm-style-iw-d span{
+    font-weight: bold;
+    color: #bd2130;
+}
+
+#controlen-scale,#controlee-scale{
+    width:200px;
+    height: 35px;
+    line-height: 30px;
+    background:#47bac1;
+    color:#FFFFFF;
+    border-radius: 0.25rem;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    cursor:pointer;
+}
+#engineerBtn{
+    margin-bottom:5px;
+}
+
+#engineer-select{
+    border: 1px solid #ced4da;
+    overflow: auto;
+}
+
+#collapseEngineer .card-body{
+    min-height: 300px;
+}
+
+#wait-for-data{
+    background:url("http://localhost/assets/images/waitfordata.gif") no-repeat center center;
+    width: 184px;
+    height: 48px;
+}
+
+#collapseEngineer tbody tr:nth-child(-n+3) {  
+    background: rgba(71, 193, 97, 0.15);
+}
+
+.order-not{
+    background: rgba(189, 33, 49, 0.15) !important;
+}
+
+.progress{
+    position:relative;
+    background: #cccccc;
+}
+
+.progress .progress-bar{
+    background: #47bac1;
+}
+
+.progress span{
+    position:absolute;
+    width:100%;
+    text-align:center;
+    bottom:0.01rem;
+}
+
+#autocreate-progress{
+    position:relative;
+    background: #cccccc;
+    height: calc(1.5em + 0.75rem + 2px);
+}
+
+#autocreate-progress .progress-bar{
+    background: #47bac1;
+}
+
+#autocreate-progress span{
+    position:absolute;
+    width:100%;
+    text-align:center;
+    bottom:0.40rem;
+    font-size: 0.9rem;
+}

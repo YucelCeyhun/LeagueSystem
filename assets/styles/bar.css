@@ -1,0 +1,85 @@
+.sidebar{
+    background:#354052;
+    min-width: 250px;
+    max-width: 250px;
+    transition: margin 0.5s linear;
+    color: #ffffff;
+    margin-left:0;
+}
+
+.sideCollapse {
+    margin-left: -250px;
+}
+
+.sidebar-header .header-wrapper h4{
+    line-height: 48px;
+}
+
+.sidebar-header .header-wrapper a {
+    text-decoration: none;
+    color:#ffffff;
+}
+
+.sidebar-header{
+    text-align: center;
+    padding: 20px;
+}
+
+.sidebar-header .head-brand{
+    margin-right: 10px;
+    background: url("http://localhost/assets/images/brand.png") no-repeat center center;
+    width: 48px;
+    height: 48px;
+}
+
+.slidebar-nav{
+    font-size: 0.9rem;
+}
+
+.sidebar ul li a{
+    display: block;
+    position: relative;
+    padding: 10px 10px;
+    color: #dddddd;
+}
+
+.sidebar ul li ul a{
+    padding: 10px 30px;
+    background: #313b4c;
+}
+
+.sidebar ul li a:hover{
+    text-decoration: none;
+    background-color: #2d3646;
+    color: #FFFFFF;
+    transition: all 0.3s;
+}
+
+.sidebar ul li a::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.sidebar ul li ul a.active{
+   background-color: #47bac1;
+   color: #FFFFFF;
+}
+
+.icofont-engineer{
+    font-size:1rem;
+}
+
+
+@media (max-width: 992px) {
+    .sidebar{
+        margin-left: -250px;
+    }
+
+    .sideCollapse{
+        margin-left: 0;
+    }
+
+}

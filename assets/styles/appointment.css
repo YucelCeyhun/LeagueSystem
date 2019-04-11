@@ -1,0 +1,101 @@
+.appointment-list .card .card-body{
+    background: #f5f9fc;
+    border-top:1px solid rgba(0, 0, 0, 0.125);
+}
+
+.appointment-list .card .card-body .list-group-item{
+    background: none;
+    border:none;
+    padding:0.25rem 0.25rem;
+}
+
+.appointment-list .card .collapse{
+
+    border-top:1px solid rgba(0, 0, 0, 0.125);
+    
+}
+
+.appointment-list .card .card-header a{
+    color:#47bac1;
+}
+
+.appointment-list .card{
+    margin-top:20px;
+    border-bottom:1px solid rgba(0, 0, 0, 0.125) !important;
+}
+
+#page-nav ul a{
+    color:#47bac1;
+}
+
+#page-nav li.active a {
+    color:#ffffff;
+    background-color: #47bac1;
+    border:1px solid #47bac1;
+}
+
+#page-nav li.disabled a{
+    color:#ced4da;
+}
+
+#appointmentfind {
+   border-left:0;
+}
+
+.appointment-list .input-group{
+    background:#f5f9fc;
+    padding:20px;
+    border:1px solid rgba(0, 0, 0, 0.125);
+    margin-bottom:20px;
+}
+
+.appointment-list .input-group span.fa-search{
+    background:#ffffff;
+    border-right:0;
+    color:#dddddd;
+}
+
+#appointment-route-result{
+    min-width: 100%;
+    min-height: 200px;
+}
+
+#routelist-main{
+    margin:20px 0;
+    cursor:pointer;
+}
+
+#routelist-main .list-group .list-group-item{
+    background:none;
+    color:#000000;
+    font-weight: 600;
+}
+
+.sort-index{
+    font-size:50px;
+    width:200px;
+    text-align:center;
+}
+
+.appointment-excel .card{
+    background:#f5f9fc;
+    border:1px solid rgba(0, 0, 0, 0.125);
+    margin-bottom:20px;
+    border-radius: 0;
+}
+
+#engineer-select .col-lg-12{
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+
+#engineer-select  .fas{
+
+    margin:0 15px 0 15px;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+
+
+

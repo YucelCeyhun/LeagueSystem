@@ -1,0 +1,49 @@
+html,body{
+    height: 100vh;
+}
+
+body{
+    background:url("http://localhost/assets/images/bg.png") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+.container-fluid{
+    height: 100%;
+    align-content: center;
+}
+
+.input-group-prepend span{
+    width: 50px;
+    background-color: #005cbf;
+    color: black;
+    border:0 !important;
+}
+
+.form-group {
+    margin-bottom: 50px;
+}
+.card{
+    width: 500px;
+    margin-top:  auto;
+    margin-bottom: auto;
+    height: 470px;
+    background-color: rgba(0,0,0,0.6) !important;
+}
+.card-header h3{
+    color:#FFFFFF;
+}
+.login_btn {
+    width: 100px;
+    background-color: #005cbf;
+    color: #FFFFFF;
+}
+
+.login_btn:hover{
+    background-color: #007bff;
+    color: #FFFFFF;
+}
+
+.input-group input{
+    height: 50px;
+}
+
