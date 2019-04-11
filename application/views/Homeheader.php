@@ -10,6 +10,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url('assets/bootstrap/js/bootstrap.min.js');?>"></script>
     <script type="text/javascript" src="<?php echo base_url('assets/alertifyjs/alertify.min.js');?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/js/utilities.js');?>"></script>
     <script type="text/javascript" src="<?php echo base_url('assets/js/League.js');?>"></script>
     <link rel="stylesheet" href="<?php echo base_url('assets/bootstrap/css/bootstrap.css');?>" type="text/css">
     <link rel="stylesheet" href="<?php echo base_url('assets/font-awesome/css/all.css');?>" type="text/css">

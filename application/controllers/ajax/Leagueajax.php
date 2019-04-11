@@ -39,7 +39,7 @@ class LeagueAjax extends CI_Controller {
         foreach($result as $team){
             $num = $this->leaguemodel->GetTeamMatches($team->id);
             $tableRepository .= '
-            <tr>
+            <tr team-data="'.$index.'" data-target="#GeneralModal" data-toggle="modal">
             <th scope="row">'.$index.'</th>
             <td>'.$team->name.'</td>
             <td>'.$team->point.'</td>

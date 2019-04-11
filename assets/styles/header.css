@@ -35,3 +35,28 @@ body{
 .col-6{
     padding:0 !important;
 }
+
+
+/*content*/
+
+tbody tr:hover{
+    cursor: pointer;
+    border-right: 7px solid #495057
+}
+
+.modal-xl{
+    max-width: 600px;
+}
+
+#GeneralModal .modal-body .input-group-prepend{
+    border:1px solid #ced4da;
+    border-right:0;
+}
+
+#GeneralModal .modal-body  .input-group-prepend img{
+    height:calc(1.5em + 0.75rem + 2px);
+}
+
+.input-error{
+    background:#ed969e;
+}

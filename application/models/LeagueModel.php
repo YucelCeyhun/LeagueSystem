@@ -20,4 +20,12 @@ class LeagueModel extends CI_Model
       $num = $this->db->or_where($status)->get('matches')->num_rows();
       return $num;
    }
+
+   public function GetTeamAsRow($teamId){
+      $status = Array(
+         'id' => $teamId
+      );
+      $row = $this->db->where($status)->get('teams')->row();
+      return $row;
+   }
 }
