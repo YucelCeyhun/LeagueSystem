@@ -22,7 +22,7 @@ class Teamgetajax extends CI_Controller {
                 )
             );
 
-            $this->form_validation->set_rules("teamId", "Eksiklik Randevusu", "trim|numeric|greater_than_equal_to[1]");
+            $this->form_validation->set_rules("teamId", "Team Id", "trim|numeric|greater_than_equal_to[1]");
 
             if ($this->form_validation->run()) {
                 $returnedVal = Array(

@@ -1,13 +1,8 @@
 <?php
-/*
-* CI_Model Sınıfıdan kalıtım yapılarak yeni mode oluşturuldu amaç control ile modeli ayırarak MVC kurallarına bağlı kalmak
-* 2 method oluşturuldu. 1. method teamleri teams isimli tablodan geitirip büyükten küçüğe sıralama yapıldı ve geriye döndürüldü.
-* 2. method ile teamId ye karşılık gelen teamin maç sayısı çekildi.
-*/
 defined('BASEPATH') OR exit('No direct script access allowed');
-class LeagueModel extends CI_Model
+class MatchModel extends CI_Model
 {
-   public function GetTeamsAsArray(){
+   /*public function GetTeamsAsArray(){
       $result = $this->db->order_by('point','DESC')->get('teams')->result();
       return $result;
    }
@@ -39,16 +34,24 @@ class LeagueModel extends CI_Model
          return true;
 
       return false;
+   }*/
+
+   public function GetMatchAsRow($weekIndex){
+        $status = Array(
+          'mId' => $weekIndex  
+        );
+       $row = $this->db->where($status)->get('matches')->row();
+       return $row;
    }
 
-   public function ZeroTeamsData(){
-      $array = Array(
-         'point' => 0,
-         'win' => 0,
-         'lost' => 0,
-         'drawn' => 0,
-         'goalDifference' => 0
-      );
-      $this->db->update('teams',$array);
-   }
+    public function UpdateMatch($matchIndex,$matchArray){
+        $status = Array(
+            'mId' => $matchIndex
+        );
+
+        if($this->db->where($status)->update('matches',$matchArray)){
+            return true;
+        }
+        return false;
+    }
 }

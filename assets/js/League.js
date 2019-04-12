@@ -2,7 +2,6 @@ alertify.set('notifier', 'position', 'top-center');
 var rowId = null;
 
 $(function () {
-    $('[data-toggle="tooltip"]').tooltip();
     $.GetTeams();
 
     $('#league > .card-body').on('click', 'tbody tr', function () {
@@ -80,9 +79,9 @@ $.UpdateTeamData = (rowId, team, offensive, defensive) => {
 
     if ($.InputEmptyControl(formInput)) {
         var jData = {
-            team: team,
-            offensive: offensive,
-            defensive: defensive,
+            team: team.val(),
+            offensive: offensive.val(),
+            defensive: defensive.val(),
             teamId: teamId
         };
 
@@ -94,6 +93,7 @@ $.UpdateTeamData = (rowId, team, offensive, defensive) => {
                 var myData = JSON.parse(data);
                 if (myData.situation == 1) {
                     alertify.success(myData.msg);
+                    $("#league > .card-body").html(myData.val);
                 } else {
                     alertify.error(myData.msg);
                 }

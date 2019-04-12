@@ -17,6 +17,10 @@
   </div>
   <div class="card-body">
   </div>
+  <div class="card-footer justify-content-between d-flex">
+    <button type="button" class="btn btn-success" id="playAllBtn" data-toggle="tooltip" data-placement="top" title="Play All Matches"><i class="icofont-football-alt"></i></button>
+    <button type="button" class="btn btn-primary" id="nextBtn" data-toggle="tooltip" data-placement="top" title="Next Week"><i class="icofont-arrow-right"></i></button>
+  </div>
 </div>
 </div>
 </div>
