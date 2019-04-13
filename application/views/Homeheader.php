@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/alertifyjs/css/alertify.min.css');?>" type="text/css">
     <link rel="stylesheet" href="<?php echo base_url('assets/alertifyjs/css/themes/bootstrap.css');?>" type="text/css">
     <link rel="stylesheet" href="<?php echo base_url('assets/alertifyjs/css/themes/default.css');?>" type="text/css">
-    <link rel="stylesheet" href="<?php echo base_url('assets/styles/panelstyle.css');?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/styles/style.css');?>" type="text/css">
 </head>
 <body>
 <div class="root">

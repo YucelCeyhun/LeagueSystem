@@ -2,41 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 class MatchModel extends CI_Model
 {
-   /*public function GetTeamsAsArray(){
-      $result = $this->db->order_by('point','DESC')->get('teams')->result();
-      return $result;
-   }
-
-   public function GetTeamMatches($teamId){
-      $status = Array(
-         'teamHostId' => $teamId,
-         'teamGuestId' => $teamId
-      );
-      $num = $this->db->or_where($status)->get('matches')->num_rows();
-      return $num;
-   }
-
-   public function GetTeamAsRow($teamId){
-      $status = Array(
-         'id' => $teamId
-      );
-      $row = $this->db->where($status)->get('teams')->row();
-      return $row;
-   }
-
-   
-   public function UpdateTeamData($teamId,$array){
-      $status = Array(
-         'id' => $teamId
-      );
-      
-      if($this->db->where($status)->update('teams',$array))
-         return true;
-
-      return false;
-   }*/
-
-   public function GetMatchAsRow($weekIndex){
+   public function GetMatchAsRow($matchIndex){
         $status = Array(
           'mId' => $weekIndex  
         );
@@ -44,7 +10,7 @@ class MatchModel extends CI_Model
        return $row;
    }
 
-    public function UpdateMatch($matchIndex,$matchArray){
+   public function UpdateMatch($matchIndex,$matchArray){
         $status = Array(
             'mId' => $matchIndex
         );
@@ -54,4 +20,26 @@ class MatchModel extends CI_Model
         }
         return false;
     }
+
+   public function ZeroMatchesData(){
+      $array = Array(
+         'teamHostId' => 0,
+         'teamGuestId' => 0,
+         'teamHostPoint' => 0,
+         'TeamGuestPoint' => 0
+      );
+      $this->db->update('matches',$array);
+   }
+
+   public function GetMatchAsRowWithTeam($matchIndex){
+      $status = Array(
+         'matches.mId' => $matchIndex  
+      );
+      $row = $this->db->where($status)->get('matches')->row();
+
+      return $row;
+
+   }
+
 }
+

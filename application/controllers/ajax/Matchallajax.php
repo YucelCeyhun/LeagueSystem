@@ -40,11 +40,11 @@ class Matchallajax extends CI_Controller {
         $this->leaguemodel->ZeroTeamsData();
 
         $WeekCombination[] = [[1,2],[3,4]];
-        $WeekCombination[] = [[1,3],[2,4]];
+        $WeekCombination[] = [[2,4],[1,3]];
         $WeekCombination[] = [[1,4],[2,3]];
-        $WeekCombination[] = [[2,1],[4,3]];
+        $WeekCombination[] = [[4,3],[2,1]];
         $WeekCombination[] = [[3,1],[4,2]];
-        $WeekCombination[] = [[4,1],[3,2]];
+        $WeekCombination[] = [[3,2],[4,1]];
 
        for($i=1;$i<=6;$i++){
             $currentCombine = rand(0,count($WeekCombination)-1);

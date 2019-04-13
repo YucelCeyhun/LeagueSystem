@@ -24,7 +24,7 @@ body{
 }
 
 .content{
-    width: 900px;
+    width: 960px;
     height: 500px;
 }
 
@@ -32,14 +32,9 @@ body{
     height: 500px;
 }
 
-.col-6{
-    padding:0 !important;
-}
-
-
 /*content*/
 
-tbody tr:hover{
+#league table tbody tr:hover{
     cursor: pointer;
     border-right: 7px solid #495057
 }
@@ -59,4 +54,12 @@ tbody tr:hover{
 
 .input-error{
     background:#ed969e;
+}
+
+#matches .card-body tbody{
+    cursor: pointer;
+}
+
+#matches .card-body table tr:last-child td{
+    border-bottom: 1px solid #ced4da
 }

@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class LeagueModel extends CI_Model
 {
    public function GetTeamsAsArray(){
-      $result = $this->db->order_by('point','DESC')->get('teams')->result();
+      $result = $this->db->order_by('point','DESC')->order_by('goalDifference','DESC')->order_by('name','ASC')->get('teams')->result();
       return $result;
    }
 
