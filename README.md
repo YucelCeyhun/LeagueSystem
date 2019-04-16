@@ -18,7 +18,7 @@
 
 ### Güç Farkının Olasılığa Etkisi ###
 
-![ornek-2](docs/league.jpg)
+![ornek-2](docs/league2.jpg)
 Bir takımın Gol Atması tabanda her döngü başına 1/10 ihtimalken burda bir takımın bir maçta en az 1 gol atma ihtimalinin;
 0,1x(0,9)<sup>9</sup>x(!10/!1*!9) olacağı anlamına gelir.Buda yaklaşık olarak %65 ihtimaldir.
 #### Güç farkı ve ev sahibi etkisi ####
