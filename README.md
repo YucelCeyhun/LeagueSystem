@@ -13,7 +13,7 @@
 ## Bilgisayarda Olaslık Hesabı ##
 - Bu sistemde bir takımın bir takıma 10 golden fazla atması imkansızdır,
 - Maç yapan takımlar arasındaki offensive ve defensive farka ve ev sahibi veya konuk takım olmasına göre gol atma veya yeme ihtimali değişir,
-- 4. haftada 1/6 katsayısı kullanılarak olasılık hesabı ve 5. haftada 1/3 katsayısı kullanılarak olaslık hesabı yapılmıştır.
+- 4.haftada 1/6 katsayısı kullanılarak olasılık hesabı ve 5. haftada 1/3 katsayısı kullanılarak olaslık hesabı yapılmıştır.
 
 
 ### Güç Farkının Olasılığa Etkisi ###
