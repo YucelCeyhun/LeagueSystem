@@ -1,5 +1,5 @@
 # League System
-
+![ornek-1](docs/league.jpg)
 ## Olasılık Hesabı 4. hafta ##
 - Bir takımın 4. haftadan lig sonuna kadar alabileceği puanlar genel olarak [0,1,2,3,4,6] orasından biri olabilir,
 - Bir takımın kazanma ihtimalinin olabilmesi için 1. olan takımla arasında 6 veya 6 dan az puan farklı olmalı,
@@ -16,8 +16,15 @@
 - 4. haftada 1/6 katsayısı kullanılarak olasılık hesabı ve 5. haftada 1/3 katsayısı kullanılarak olaslık hesabı yapılmıştır.
 
 
-### Olasılık Hesabı Örnek ###
-![ornek-1](docs/league3.jpg)
+### Güç Farkının Olasılığa Etkisi ###
 
 
-[Youtube](https://www.youtube.com/channel/UC4OS6so-d9J9OgtQ1a4ROTg?view_as=subscriber) [UzmanWebiz](https://www.uzmanwebiz.net/)
+Bir takımın Gol Atması tabanda her döngü başına 1/10 ihtimalken burda bir takımın bir maçta en az 1 gol atma ihtimalinin;
+0,1x(0,9)<sup>9</sup>x(!10/!1*!9) olacağı anlamına gelir.Buda yaklaşık olarak %65 ihtimaldir.
+#### Güç farkı ve ev sahibi etkisi ####
+10 + offensive - defensive +- hostEffect farmülünden etkisi hesaplanır yani bir takımın offensive gücü diğer takımın defensive gücünden daha fazla ise gol atma ihtimali artar. <br>
+hostEffect ev sahibi için avantaj sağlarken,konuk takım için dezavantaj olacaktır.homeEffect %5 olarak ayarlanmıştır.
+
+
+Örneğin Demosu : [UzmanWebiz](https://www.uzmanwebiz.net/) <br>
+Diğer Projeler : [Youtube](https://www.youtube.com/channel/UC4OS6so-d9J9OgtQ1a4ROTg?view_as=subscriber) 
