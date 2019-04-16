@@ -25,6 +25,11 @@ Bir takımın Gol Atması tabanda her döngü başına 1/10 ihtimalken burda bir
 10 + offensive - defensive +- hostEffect farmülünden etkisi hesaplanır yani bir takımın offensive gücü diğer takımın defensive gücünden daha fazla ise gol atma ihtimali artar. <br>
 hostEffect ev sahibi için avantaj sağlarken,konuk takım için dezavantaj olacaktır.homeEffect %5 olarak ayarlanmıştır.
 
+### Minimum&Maximum Gol Atma Olasılığı
+- Gol atma ihtimali hiç bir zaman 0 olmaz.Yani en kötü takımın bile en iyi takma gol atma ihtimali her zaman vardır.Bu yüzden %1 ihtimal her zaman mevcut.
+- Maximum gol atma ihtimali hiç bira zaman %100 olamıyor.Gol atma ihtimali ln(x) fonksiyonuyla belirlenmiştir.Bir ln(x) fonksiyonu ln(1) de 0 ve azalarak artan bir eğime sahiptir.
+![chart](docs/chart.jpg)
+
 
 Örneğin Demosu : [UzmanWebiz](https://www.uzmanwebiz.net/) <br>
 Diğer Projeler : [Youtube](https://www.youtube.com/channel/UC4OS6so-d9J9OgtQ1a4ROTg?view_as=subscriber) 
