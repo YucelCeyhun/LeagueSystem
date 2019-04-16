@@ -8,7 +8,7 @@
 ## Olasılık Hesabı 5. hafta ##
 - Bir takımın 5. haftadan sonra alabileceği puanlar [0,1,3] tür,
 - Bir takımın 5. haftada kazanma ihtimali olabilmesi için 1. ile arasında en çok 3 puan olmalıdır.
-- 5. haftada gol farkından dolayı oluşacak ihtimalleri hesaplamak için permutasyon ve olaslık hesapları yapılmalıdır.
+-  5.haftada gol farkından dolayı oluşacak ihtimalleri hesaplamak için permutasyon ve olaslık hesapları yapılmalıdır.
 
 ## Bilgisayarda Olaslık Hesabı ##
 - Bu sistemde bir takımın bir takıma 10 golden fazla atması imkansızdır,
