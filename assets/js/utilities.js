@@ -19,3 +19,32 @@ $.InputRemoveClass = () => {
         });
     })
 }
+
+$.ChartAnimation = (weekIndex) => {
+
+    if (weekIndex == 4 || weekIndex == 5) {
+        if (!$("#champrate-box").hasClass("active")) {
+            $("#champrate-box").addClass("active");
+            $("#champrate-box").animate({
+                "left": "470px"
+            }, {
+                duration: 1000,
+                complete: () => {
+                    $("#champrate-box").css("z-index","0");
+                }
+            })
+        }
+    } else {
+        if ($("#champrate-box").hasClass("active")) {
+            $("#champrate-box").animate({
+                "left": "0"
+            }, {
+                    duration: 1000,
+                    complete: () => {
+                        $("#champrate-box").removeClass("active");
+                    }
+            });
+            $("#champrate-box").css("z-index","-5");
+        }
+    }
+}

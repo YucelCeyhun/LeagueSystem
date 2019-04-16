@@ -23,16 +23,17 @@ body{
     height: 100%;
 }
 
+/*content */
+
 .content{
     width: 960px;
     height: 500px;
+    
 }
 
-.content .card{
+.content .row .card{
     height: 500px;
 }
-
-/*content*/
 
 #league table tbody tr:hover{
     cursor: pointer;
@@ -58,8 +59,31 @@ body{
 
 #matches .card-body tbody{
     cursor: pointer;
+    position: relative;
 }
 
 #matches .card-body table tr:last-child td{
     border-bottom: 1px solid #ced4da
+}
+
+#champrate-box{
+    position: absolute;
+    width: 400px;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: -5;
+    
+}
+
+#champrate-box .card{
+    height: 300px;
+}
+
+#champrate-box.active{
+    display: block;
+}
+
+.card-title{
+    font-size: 16px;
 }

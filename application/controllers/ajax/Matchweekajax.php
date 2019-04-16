@@ -16,11 +16,12 @@ class Matchweekajax extends CI_Controller {
 
 	public function index()
 	{
-       $WeekCombination = $this->input->post("weekCombination");
-       $matchId = $this->input->post("matchId");
-
 
         if ($this->input->is_ajax_request()) {
+
+            $WeekCombination = $this->input->post("weekCombination");
+            $matchId = $this->input->post("matchId");
+     
             if($this->PlayCurrentMatch($WeekCombination,$matchId)){
                 $this->load->library('leagueconverter');
                 $this->load->library('matchconverter');
@@ -38,6 +39,8 @@ class Matchweekajax extends CI_Controller {
             }
 
             echo json_encode($returnedVal);
+        }else{
+            die("Get out there");
         }
     }
 

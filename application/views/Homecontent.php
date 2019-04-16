@@ -16,11 +16,24 @@
     Match Results
   </div>
   <div class="card-body">
+  <h5 class="card-title text-center"></h5>
+  <div class="main"></div>
   </div>
   <div class="card-footer justify-content-between d-flex">
     <button type="button" class="btn btn-success" id="playAllBtn" data-toggle="tooltip" data-placement="top" title="Play All Matches"><i class="icofont-football-alt"></i></button>
     <button type="button" class="btn btn-primary" id="nextBtn" data-toggle="tooltip" data-placement="top" title="Next Week"><i class="icofont-arrow-right"></i></button>
   </div>
+  <div id="champrate-box">
+  <div class="card" id="champrate">
+    <div class="card-header text-center">
+      Championship Probability
+    </div>
+    <div class="card-body">
+    <h5 class="card-title text-center"></h5>
+      <canvas id="chart-area"></canvas>
+    </div>
+  </div>
+</div>
 </div>
 </div>
 </div>
@@ -42,4 +55,5 @@
           </div>
         </div>
 </div>
+
  
